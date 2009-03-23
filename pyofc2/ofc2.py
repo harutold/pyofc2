@@ -27,7 +27,7 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 """
 
-import cjson
+#import cjson
                  
 class OFCBase(dict): 
     type = None
@@ -133,7 +133,7 @@ class open_flash_chart(OFCBase):
     'x_axis': x_axis,
     'y_axis': y_axis,
     'y_axis_right': y_axis_right,
-    'tooltip' : tooltip,
+    'tooltip': tooltip,
     'radar_axis': radar_axis,
     }
 
@@ -149,8 +149,8 @@ class open_flash_chart(OFCBase):
         except:
             self['elements'] = [element]
 
-    def __str__(self):
-        return cjson.encode(self)
+#    def __str__(self):
+#        return cjson.encode(self)
         
-    def render(self):
-        return cjson.encode(self)
+#    def render(self):
+#        return cjson.encode(self)
